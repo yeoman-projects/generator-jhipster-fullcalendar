@@ -209,23 +209,23 @@ module.exports = class extends BaseGenerator {
             );
 
             this.rewriteFile(
-                webappDir + 'app/entities/fullcalendar/calendar-event.module.ts',
+                webappDir + 'app/entities/fullcalendar-event/calendar-event.module.ts',
                 needle_import,
                 'import { ' + baseNameUpperCase + "SharedModule } from 'app/shared/shared.module';"
             );
             this.rewriteFile(
-                webappDir + 'app/entities/fullcalendar/calendar-event.module.ts',
+                webappDir + 'app/entities/fullcalendar-event/calendar-event.module.ts',
                 needle_sharedmodule,
                 'imports: [' + baseNameUpperCase + 'SharedModule, RouterModule.forChild(calendarEventRoute)],'
             );
 
             this.rewriteFile(
-                webappDir + 'app/entities/fullcalendar/calendar-provider.module.ts',
+                webappDir + 'app/entities/fullcalendar-provider/calendar-provider.module.ts',
                 needle_import,
                 'import { ' + baseNameUpperCase + "SharedModule } from 'app/shared/shared.module';"
             );
             this.rewriteFile(
-                webappDir + 'app/entities/fullcalendar/calendar-provider.module.ts',
+                webappDir + 'app/entities/fullcalendar-provider/calendar-provider.module.ts',
                 needle_sharedmodule,
                 'imports: [' + baseNameUpperCase + 'SharedModule, RouterModule.forChild(calendarProviderRoute)],'
             );
