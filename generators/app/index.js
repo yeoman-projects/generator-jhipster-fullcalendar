@@ -314,6 +314,54 @@ module.exports = class extends BaseGenerator {
         this.rewriteFile(javaDir + 'repository/CalendarRepository.java', needle_package, 'package ' + this.packageName + '.repository;');
         this.rewriteFile(javaDir + 'repository/CalendarRepository.java', needle_import, 'import ' + this.packageName + '.domain.Calendar;');
 
+        // repository/search/CalendarSearchRepository.java
+        this.template(
+            'src/main/java/package/repository/search/CalendarSearchRepository.java',
+            javaDir + 'repository/search/CalendarSearchRepository.java'
+        );
+        this.rewriteFile(
+            javaDir + 'repository/search/CalendarSearchRepository.java',
+            needle_package,
+            'package ' + this.packageName + '.repository.search;'
+        );
+        this.rewriteFile(
+            javaDir + 'repository/search/CalendarSearchRepository.java',
+            needle_import,
+            'import ' + this.packageName + '.domain.Calendar;'
+        );
+
+        // repository/search/CalendarEventSearchRepository.java
+        this.template(
+            'src/main/java/package/repository/search/CalendarEventSearchRepository.java',
+            javaDir + 'repository/search/CalendarEventSearchRepository.java'
+        );
+        this.rewriteFile(
+            javaDir + 'repository/search/CalendarEventSearchRepository.java',
+            needle_package,
+            'package ' + this.packageName + '.repository.search;'
+        );
+        this.rewriteFile(
+            javaDir + 'repository/search/CalendarEventSearchRepository.java',
+            needle_import,
+            'import ' + this.packageName + '.domain.CalendarEvent;'
+        );
+
+        // repository/search/CalendarProviderSearchRepository.java
+        this.template(
+            'src/main/java/package/repository/search/CalendarProviderSearchRepository.java',
+            javaDir + 'repository/search/CalendarProviderSearchRepository.java'
+        );
+        this.rewriteFile(
+            javaDir + 'repository/search/CalendarProviderSearchRepository.java',
+            needle_package,
+            'package ' + this.packageName + '.repository.search;'
+        );
+        this.rewriteFile(
+            javaDir + 'repository/search/CalendarProviderSearchRepository.java',
+            needle_import,
+            'import ' + this.packageName + '.domain.CalendarProvider;'
+        );
+
         // service/CalendarEventQueryService.java
         this.template('src/main/java/package/service/CalendarEventQueryService.java', javaDir + 'service/CalendarEventQueryService.java');
         this.rewriteFile(javaDir + 'service/CalendarEventQueryService.java', needle_package, 'package ' + this.packageName + '.service;');
