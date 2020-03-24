@@ -178,7 +178,7 @@ module.exports = class extends BaseGenerator {
             this.rewriteFile(
                 webappDir + 'app/entities/entity.module.ts',
                 '/* jhipster-needle-add-entity-route - JHipster will add entity modules routes here */',
-                "{path: 'calendar-event', loadChildren: () => import('./calendar-event/calendar-event.module').then(m => m.FullCalendarCalendarEventModule)},\n {path: 'calendar', loadChildren: () => import('./calendar/calendar.module').then(m => m.FullCalendarCalendarModule)},\n {path: 'calendar-provider', loadChildren: () => import('./calendar-provider/calendar-provider.module').then(m => m.FullCalendarCalendarProviderModule)},"
+                "{path: 'fullcalendar-event', loadChildren: () => import('./fullcalendar-event/calendar-event.module').then(m => m.FullCalendarCalendarEventModule)},\n {path: 'fullcalendar', loadChildren: () => import('./fullcalendar/calendar.module').then(m => m.FullCalendarCalendarModule)},\n {path: 'fullcalendar-provider', loadChildren: () => import('./fullcalendar-provider/calendar-provider.module').then(m => m.FullCalendarCalendarProviderModule)},"
             );
 
             // app/entities/photo-photo/photo-photo.module.ts
