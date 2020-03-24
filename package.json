@@ -1,6 +1,6 @@
 {
   "name": "generator-jhipster-fullcalendar",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "FullCalendar integration for JHipster.",
   "keywords": [
     "yeoman-generator",
