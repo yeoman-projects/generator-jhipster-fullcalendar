@@ -238,7 +238,10 @@ module.exports = class extends BaseGenerator {
             this.rewriteFile(webappDir + 'app/core/user/account.model.ts', 'public activated: boolean', 'public id: any,');
 
             // Test settings
-            this.rewriteFile(testDir + 'spec/app/account/settings/settings.component.spec.ts', 'firstName:', 'id: 1,');
+            this.rewriteFile(testDir + 'spec/app/account/settings/settings.component.spec.ts', 'activated:', 'id: 1,');
+
+            // Test account
+            this.rewriteFile(testDir + 'spec/app/core/user/account.service.spec.ts', 'activated:', 'id: 1,');
         }
         if (this.buildTool === 'maven') {
             // No Pom.xml dependencies
