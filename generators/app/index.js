@@ -721,6 +721,10 @@ module.exports = class extends BaseGenerator {
             'import ' + this.packageName + '.service.dto.CalendarProviderDTO;'
         );
 
+        // service/mapper/EntityMapper.java
+        this.template('src/main/java/package/service/mapper/EntityMapper.java', javaDir + 'service/mapper/EntityMapper.java');
+        this.rewriteFile(javaDir + 'service/mapper/EntityMapper.java', needle_package, 'package ' + this.packageName + '.service.mapper;');
+
         // web/rest/CalendarEventResource.java
         this.template('src/main/java/package/web/rest/CalendarEventResource.java', javaDir + 'web/rest/CalendarEventResource.java');
         this.rewriteFile(javaDir + 'web/rest/CalendarEventResource.java', needle_package, 'package ' + this.packageName + '.web.rest;');
