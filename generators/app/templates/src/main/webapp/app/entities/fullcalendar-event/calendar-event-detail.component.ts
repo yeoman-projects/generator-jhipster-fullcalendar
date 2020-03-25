@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { JhiDataUtils } from 'ng-jhipster';
 
-import { ICalendarEvent } from 'app/shared/model/calendar-event.model';
+import { ICalendarEvent } from 'app/shared/model/fullcalendar-event.model';
 
 @Component({
   selector: 'jhi-calendar-event-detail',

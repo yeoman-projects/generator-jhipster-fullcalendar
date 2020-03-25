@@ -6,7 +6,7 @@ import * as moment from 'moment';
 
 import { SERVER_API_URL } from 'app/app.constants';
 import { createRequestOption, SearchWithPagination } from 'app/shared/util/request-util';
-import { ICalendar } from 'app/shared/model/calendar.model';
+import { ICalendar } from 'app/shared/model/fullcalendar.model';
 
 type EntityResponseType = HttpResponse<ICalendar>;
 type EntityArrayResponseType = HttpResponse<ICalendar[]>;

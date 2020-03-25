@@ -10,8 +10,8 @@ import { EventModalComponent } from './event-modal.component';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { CalendarService } from 'app/entities/fullcalendar/calendar.service';
-import { ICalendar } from 'app/shared/model/calendar.model';
-import { ICalendarEvent } from 'app/shared/model/calendar-event.model';
+import { ICalendar } from 'app/shared/model/fullcalendar.model';
+import { ICalendarEvent } from 'app/shared/model/fullcalendar-event.model';
 import { CalendarEventService } from 'app/entities/fullcalendar-event/calendar-event.service';
 import { AccountService } from 'app/core/auth/account.service';
 import { Account } from 'app/core/user/account.model';

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { JhiEventManager } from 'ng-jhipster';
 
-import { ICalendarProvider } from 'app/shared/model/calendar-provider.model';
+import { ICalendarProvider } from 'app/shared/model/fullcalendar-provider.model';
 import { CalendarProviderService } from './calendar-provider.service';
 
 @Component({

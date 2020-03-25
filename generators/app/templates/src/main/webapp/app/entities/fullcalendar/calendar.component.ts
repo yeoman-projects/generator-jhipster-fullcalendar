@@ -5,7 +5,7 @@ import { Subscription } from 'rxjs';
 import { JhiEventManager, JhiDataUtils } from 'ng-jhipster';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
-import { ICalendar } from 'app/shared/model/calendar.model';
+import { ICalendar } from 'app/shared/model/fullcalendar.model';
 
 import { ITEMS_PER_PAGE } from 'app/shared/constants/pagination.constants';
 import { CalendarService } from './calendar.service';

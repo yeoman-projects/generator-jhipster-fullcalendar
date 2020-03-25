@@ -8,12 +8,12 @@ import * as moment from 'moment';
 import { DATE_TIME_FORMAT } from 'app/shared/constants/input.constants';
 import { JhiDataUtils, JhiFileLoadError, JhiEventManager, JhiEventWithContent } from 'ng-jhipster';
 
-import { ICalendarEvent, CalendarEvent } from 'app/shared/model/calendar-event.model';
+import { ICalendarEvent, CalendarEvent } from 'app/shared/model/fullcalendar-event.model';
 import { CalendarEventService } from './calendar-event.service';
 import { AlertError } from 'app/shared/alert/alert-error.model';
 import { IUser } from 'app/core/user/user.model';
 import { UserService } from 'app/core/user/user.service';
-import { ICalendar } from 'app/shared/model/calendar.model';
+import { ICalendar } from 'app/shared/model/fullcalendar.model';
 import { CalendarService } from 'app/entities/fullcalendar/calendar.service';
 
 type SelectableEntity = IUser | ICalendar;

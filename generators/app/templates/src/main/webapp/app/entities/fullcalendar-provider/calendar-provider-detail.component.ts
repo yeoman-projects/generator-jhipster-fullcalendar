@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { ICalendarProvider } from 'app/shared/model/calendar-provider.model';
+import { ICalendarProvider } from 'app/shared/model/fullcalendar-provider.model';
 
 @Component({
   selector: 'jhi-calendar-provider-detail',

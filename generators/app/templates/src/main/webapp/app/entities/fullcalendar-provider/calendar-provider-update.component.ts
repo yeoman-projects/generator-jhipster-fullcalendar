@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 import * as moment from 'moment';
 import { DATE_TIME_FORMAT } from 'app/shared/constants/input.constants';
 
-import { ICalendarProvider, CalendarProvider } from 'app/shared/model/calendar-provider.model';
+import { ICalendarProvider, CalendarProvider } from 'app/shared/model/fullcalendar-provider.model';
 import { CalendarProviderService } from './calendar-provider.service';
 import { IUser } from 'app/core/user/user.model';
 import { UserService } from 'app/core/user/user.service';

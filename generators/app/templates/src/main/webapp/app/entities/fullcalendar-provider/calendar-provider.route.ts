@@ -6,7 +6,7 @@ import { Observable, of, EMPTY } from 'rxjs';
 import { flatMap } from 'rxjs/operators';
 
 import { UserRouteAccessService } from 'app/core/auth/user-route-access-service';
-import { ICalendarProvider, CalendarProvider } from 'app/shared/model/calendar-provider.model';
+import { ICalendarProvider, CalendarProvider } from 'app/shared/model/fullcalendar-provider.model';
 import { CalendarProviderService } from './calendar-provider.service';
 import { CalendarProviderComponent } from './calendar-provider.component';
 import { CalendarProviderDetailComponent } from './calendar-provider-detail.component';
