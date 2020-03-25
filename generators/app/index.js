@@ -76,6 +76,7 @@ module.exports = class extends BaseGenerator {
         const javaDir = `${jhipsterConstants.SERVER_MAIN_SRC_DIR + this.packageFolder}/`;
         const resourceDir = jhipsterConstants.SERVER_MAIN_RES_DIR;
         const webappDir = jhipsterConstants.CLIENT_MAIN_SRC_DIR;
+        const testDir = jhipsterConstants.CLIENT_TEST_SRC_DIR;
 
         // variable from questions
         if (typeof this.message === 'undefined') {
@@ -230,9 +231,14 @@ module.exports = class extends BaseGenerator {
                 'imports: [' + baseNameUpperCase + 'SharedModule, RouterModule.forChild(calendarProviderRoute)],'
             );
 
-            // Account id
-            //TODO Find an alternative solution, better than writing the id field before the activated field (which may not be there)
+            // ID field mess
+            //TODO Find an alternative solution
+
+            // Account
             this.rewriteFile(webappDir + 'app/core/user/account.model.ts', 'public activated: boolean', 'public id: any,');
+
+            // Test settings
+            this.rewriteFile(testDir + 'spec/app/account/settings/settings.component.spec.ts', 'firstName:', 'id: 1,');
         }
         if (this.buildTool === 'maven') {
             // No Pom.xml dependencies
