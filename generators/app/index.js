@@ -231,8 +231,8 @@ module.exports = class extends BaseGenerator {
             );
 
             // Account id
-            //TODO Find an alternative solution, better than writing the id field after the imageUrl field (which may not be there)
-            this.rewriteFile(webappDir + 'app/core/user/account.model.ts', 'public imageUrl: string', '\npublic id: string,');
+            //TODO Find an alternative solution, better than writing the id field before the activated field (which may not be there)
+            this.rewriteFile(webappDir + 'app/core/user/account.model.ts', 'public activated: boolean', 'public id: any,');
         }
         if (this.buildTool === 'maven') {
             // No Pom.xml dependencies
