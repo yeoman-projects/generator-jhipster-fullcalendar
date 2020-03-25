@@ -229,6 +229,10 @@ module.exports = class extends BaseGenerator {
                 needle_sharedmodule,
                 'imports: [' + baseNameUpperCase + 'SharedModule, RouterModule.forChild(calendarProviderRoute)],'
             );
+
+            // Account id
+            //TODO Find an alternative solution, better than writing the id field after the imageUrl field (which may not be there)
+            this.rewriteFile(webappDir + 'app/core/user/account.model.ts', 'public imageUrl: string', '\npublic id: string,');
         }
         if (this.buildTool === 'maven') {
             // No Pom.xml dependencies
