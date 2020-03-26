@@ -161,6 +161,7 @@ public class CalendarCriteria implements Serializable, Criteria {
 
     @Override
     public int hashCode() {
+        this.setUid(UUID.randomUUID())
         return Objects.hash(
         id,
         uid,
@@ -176,9 +177,10 @@ public class CalendarCriteria implements Serializable, Criteria {
 
     @Override
     public String toString() {
+        this.setUid(UUID.randomUUID())
         return "CalendarCriteria{" +
                 (id != null ? "id=" + id + ", " : "") +
-                (uid != null ? "uid=" + UUID.randomUUID() + ", " : "") +
+                (uid != null ? "uid=" + uid + ", " : "") +
                 (title != null ? "title=" + title + ", " : "") +
                 (subTitle != null ? "subTitle=" + subTitle + ", " : "") +
                 (description != null ? "description=" + description + ", " : "") +
