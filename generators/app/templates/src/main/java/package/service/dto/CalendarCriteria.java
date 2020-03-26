@@ -2,6 +2,7 @@
 
 import java.io.Serializable;
 import java.util.Objects;
+import java.util.UUID;
 import io.github.jhipster.service.Criteria;
 import io.github.jhipster.service.filter.BooleanFilter;
 import io.github.jhipster.service.filter.DoubleFilter;
@@ -177,7 +178,7 @@ public class CalendarCriteria implements Serializable, Criteria {
     public String toString() {
         return "CalendarCriteria{" +
                 (id != null ? "id=" + id + ", " : "") +
-                (uid != null ? "uid=" + uid + ", " : "") +
+                (uid != null ? "uid=" + UUID.randomUUID() + ", " : "") +
                 (title != null ? "title=" + title + ", " : "") +
                 (subTitle != null ? "subTitle=" + subTitle + ", " : "") +
                 (description != null ? "description=" + description + ", " : "") +
