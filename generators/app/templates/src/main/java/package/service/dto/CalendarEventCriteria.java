@@ -335,30 +335,7 @@ public class CalendarEventCriteria implements Serializable, Criteria {
 
     @Override
     public int hashCode() {
-        return Objects.hash(
-        id,
-        uid,
-        title,
-        subTitle,
-        description,
-        status,
-        priority,
-        place,
-        location,
-        cssTheme,
-        url,
-        isPublic,
-        startDate,
-        endDate,
-        openingHours,
-        imageSha1,
-        imageUrl,
-        thumbnailSha1,
-        createdAt,
-        updatedAt,
-        createdById,
-        calendarId
-        );
+        return 31;
     }
 
     @Override

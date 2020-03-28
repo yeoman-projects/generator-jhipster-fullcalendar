@@ -160,17 +160,7 @@ public class CalendarCriteria implements Serializable, Criteria {
 
     @Override
     public int hashCode() {
-        return Objects.hash(
-        id,
-        uid,
-        title,
-        subTitle,
-        description,
-        createdAt,
-        updatedAt,
-        ownedById,
-        sharedWithId
-        );
+        return 31;
     }
 
     @Override

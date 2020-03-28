@@ -176,7 +176,7 @@ public class CalendarDTO implements Serializable {
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(getId());
+        return 31;
     }
 
     @Override
