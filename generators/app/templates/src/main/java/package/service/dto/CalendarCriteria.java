@@ -177,7 +177,7 @@ public class CalendarCriteria implements Serializable, Criteria {
     public String toString() {
         return "CalendarCriteria{" +
                 (id != null ? "id=" + id + ", " : "") +
-                (uid != null ? "uid=" + uid + ", " : "") +
+                // (uid != null ? "uid=" + uid + ", " : "") +
                 (title != null ? "title=" + title + ", " : "") +
                 (subTitle != null ? "subTitle=" + subTitle + ", " : "") +
                 (description != null ? "description=" + description + ", " : "") +

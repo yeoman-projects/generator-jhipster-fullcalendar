@@ -244,7 +244,7 @@ public class Calendar implements Serializable {
     public String toString() {
         return "Calendar{" +
             "id=" + getId() +
-            ", uid='" + getUid() + "'" +
+            // ", uid='" + getUid() + "'" +
             ", title='" + getTitle() + "'" +
             ", subTitle='" + getSubTitle() + "'" +
             ", description='" + getDescription() + "'" +

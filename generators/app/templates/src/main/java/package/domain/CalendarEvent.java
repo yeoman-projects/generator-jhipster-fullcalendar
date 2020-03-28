@@ -591,7 +591,7 @@ public class CalendarEvent implements Serializable {
     public String toString() {
         return "CalendarEvent{" +
             "id=" + getId() +
-            ", uid='" + getUid() + "'" +
+            // ", uid='" + getUid() + "'" +
             ", title='" + getTitle() + "'" +
             ", subTitle='" + getSubTitle() + "'" +
             ", description='" + getDescription() + "'" +

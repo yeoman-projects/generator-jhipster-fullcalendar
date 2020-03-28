@@ -447,7 +447,7 @@ public class CalendarEventDTO implements Serializable {
     public String toString() {
         return "CalendarEventDTO{" +
             "id=" + getId() +
-            ", uid='" + getUid() + "'" +
+            // ", uid='" + getUid() + "'" +
             ", title='" + getTitle() + "'" +
             ", subTitle='" + getSubTitle() + "'" +
             ", description='" + getDescription() + "'" +
