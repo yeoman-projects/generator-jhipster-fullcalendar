@@ -2,7 +2,6 @@
 
 import java.io.Serializable;
 import java.util.Objects;
-import java.util.UUID;
 import io.github.jhipster.service.Criteria;
 import io.github.jhipster.service.filter.BooleanFilter;
 import io.github.jhipster.service.filter.DoubleFilter;
@@ -161,7 +160,6 @@ public class CalendarCriteria implements Serializable, Criteria {
 
     @Override
     public int hashCode() {
-        this.setUid(UUID.randomUUID());
         return Objects.hash(
         id,
         uid,
@@ -177,7 +175,6 @@ public class CalendarCriteria implements Serializable, Criteria {
 
     @Override
     public String toString() {
-        this.setUid(UUID.randomUUID());
         return "CalendarCriteria{" +
                 (id != null ? "id=" + id + ", " : "") +
                 (uid != null ? "uid=" + uid + ", " : "") +

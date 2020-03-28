@@ -923,11 +923,3 @@ String.prototype.cleanup = function() {
     }).replace(/[^a-zA-Z0-9]/g, '');
     return tamp.charAt(0).toUpperCase() + tamp.slice(1);
 };
-
-function execute(command) {
-    const exec = require('child_process').exec;
-
-    exec(command, (err, stdout, stderr) => {
-        process.stdout.write(stdout);
-    });
-}
